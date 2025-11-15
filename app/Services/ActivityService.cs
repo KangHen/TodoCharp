@@ -1,4 +1,4 @@
-﻿namespace Todo;
+﻿namespace Todo.App.Services;
 
 public class ActivityService
 {

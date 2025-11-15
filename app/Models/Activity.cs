@@ -1,4 +1,4 @@
-﻿namespace Todo;
+﻿namespace Todo.App.Models;
 
 public class Activity
 {

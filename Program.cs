@@ -1,9 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using Todo.App.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
+
+// Database
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=todo.db"));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

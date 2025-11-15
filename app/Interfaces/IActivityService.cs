@@ -1,6 +1,6 @@
 ﻿using Todo.App.Models;
 
-namespace Todo;
+namespace Todo.App.Interfaces;
 
 public interface IActivityService
 {
