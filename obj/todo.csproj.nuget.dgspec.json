@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mac/Net/todo/todo.csproj": {}
+    "/Users/mac/Net/todo/Todo.csproj": {}
   },
   "projects": {
-    "/Users/mac/Net/todo/todo.csproj": {
+    "/Users/mac/Net/todo/Todo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/Net/todo/todo.csproj",
-        "projectName": "todo",
-        "projectPath": "/Users/mac/Net/todo/todo.csproj",
+        "projectUniqueName": "/Users/mac/Net/todo/Todo.csproj",
+        "projectName": "Todo",
+        "projectPath": "/Users/mac/Net/todo/Todo.csproj",
         "packagesPath": "/Users/mac/.nuget/packages/",
         "outputPath": "/Users/mac/Net/todo/obj/",
         "projectStyle": "PackageReference",
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
