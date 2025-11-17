@@ -10,6 +10,33 @@ namespace Todo.App.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
+            var name = Request.Query.TryGetValue("name", out var v) && !string.IsNullOrWhiteSpace(v)
+                        ? v.ToString()
+                        : "World";
+            return Ok(new { message = "Hello, " + name });
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            return Ok();
+        }
+
+        [HttpPost]
+        public IActionResult Create()
+        {
+            return Ok();
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id)
+        {
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
             return Ok();
         }
     }
